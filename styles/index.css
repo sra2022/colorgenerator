@@ -1,0 +1,96 @@
+* {
+	padding:0;
+	margin:0;
+	font-family:monospace;
+	text-align:center;
+}
+body,#main,#inputDiv,#outputDiv {
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:flex-start;
+	background-color:#111;
+	color:#ddd;
+	gap:15px;
+}
+#outputDiv {
+	width:175px;
+}
+header {
+	height:50px;
+	width:100vw;
+	display:flex;
+	align-items:center;
+	justify-content:flex-start;
+	gap:30px;
+}
+footer {
+	padding:20px;
+}
+#favicon {
+	width:40px;
+	height:auto;
+}
+footer a{
+	text-decoration:none;
+	color:#555;
+}
+.subdiv {
+	display:flex;
+	flex-direction:row;
+	align-items:flex-end;
+	justify-content:center;
+	gap:20px;
+}
+.colorlabel {
+	border-radius:5px;
+	border:solid #ddd 2px;
+	width:30px;
+	height:30px;
+}
+.subdiv input {
+	width:100px;
+	height:30px;
+	border:none;
+	border-bottom:solid #888 2px;
+	outline:none;
+	background-color:inherit;
+	color:#ffd
+}
+.subdiv input:focus {
+	background-color:#555;
+	border-bottom:solid #ccc 2px;
+}
+#inputDiv button {
+	border:solid #ddd 2px;
+	width:100px;
+	height:34px;
+	border-radius:10px;
+	background-color:rgb(137,202,177);
+	margin-top:25px;
+}
+#inputDiv button:active {
+	background-color:#ddd;
+}
+#color {
+	width:150px;
+	height:150px;
+	border:solid #ddd 2px;
+	outline:solid #aaa 1px;
+	border-radius:10px;
+}
+@media(max-width:650px) {
+	.subdiv input {
+		width:30vw;
+	}
+	.subdiv {
+		gap:5vw;
+	}
+}
+@media(min-width:650px) {
+	#main {
+		flex-direction:row;
+		align-items:flex-start;
+		gap:50px;
+	}
+}
